@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-xh-^u3wp3ux!#yx!x$pa8&f$vr2q7sc(zgv42_c97p1=&-!qtf
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [] 
+ALLOWED_HOSTS = ['Bharath2908.pythonanywhere.com'] 
 
 
 # Application definition
@@ -73,7 +73,7 @@ DATABASES = {
         'NAME': 'ecom',
         'USER': 'root',
         'PASSWORD': 'bharath2229',
-        'HOST': 'localhost',
+        'HOST': 'yourusername.mysql.pythonanywhere-services.com',
         'PORT': '3306',
     }
 }
@@ -114,7 +114,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')     
 
 
 STATICFILES_DIRS = [
