@@ -73,7 +73,7 @@ DATABASES = {
         'NAME': 'ecom',
         'USER': 'root',
         'PASSWORD': 'bharath2229',
-        'HOST': 'yourusername.mysql.pythonanywhere-services.com',
+        'HOST': 'bharath2904.mysql.pythonanywhere-services.com',
         'PORT': '3306',
     }
 }
