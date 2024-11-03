@@ -70,11 +70,11 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'ecom',
-        'USER': 'root',
-        'PASSWORD': 'bharath2229',
-        'HOST': 'bharath2904.mysql.pythonanywhere-services.com',
-        'PORT': '3306',
+        'NAME': 'bharath2904ecom',  
+        'USER': 'bharath2904',              
+        'PASSWORD': 'bharath2229',          
+        'HOST': 'bharath2904.mysql.pythonanywhere-services.com',  
+        'PORT': '3306',                     
     }
 }
 
