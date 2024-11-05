@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-xh-^u3wp3ux!#yx!x$pa8&f$vr2q7sc(zgv42_c97p1=&-!qtf
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['Bharath2908.pythonanywhere.com'] 
+ALLOWED_HOSTS = [] 
 
 
 # Application definition
@@ -34,6 +34,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhitenoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -70,11 +71,11 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'bharath2904ecom',  
-        'USER': 'bharath2904',              
-        'PASSWORD': 'bharath2229',          
-        'HOST': 'bharath2904.mysql.pythonanywhere-services.com',  
-        'PORT': '3306',                     
+        'NAME': 'ecom',
+        'USER': 'root',
+        'PASSWORD': 'bharath2229',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
@@ -114,6 +115,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')     
 
 
